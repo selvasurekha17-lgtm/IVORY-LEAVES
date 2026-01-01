@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Surekha’s Ivory Leaves 🍁</title>
+
+<style>
+body{
+    margin:0;
+    font-family:Georgia, serif;
+    background:#f7f6f2;
+}
+
+/* ---------- HEADER ---------- */
+header{
+    display:flex;
+    align-items:center;
+    padding:15px;
+    background:#fff;
+    box-shadow:0 2px 5px rgba(0,0,0,0.2);
+}
+
+.logo{
+    width:300px;
+    height:300px;
+    object-fit:contain;
+    cursor:pointer;
+}
+
+/* GLOWING SHOP NAME */
+.shop-name{
+    flex:1;
+    text-align:center;
+    font-size:36px;
+    font-weight:bold;
+    color:#00ffff;
+    text-shadow:
+  }
+
+/* ICONS */
+.icons{
+    display:flex;
+    gap:15px;
+    font-size:22px;
+}
+
+.icon{
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.icon:hover{
+    color:#6a5acd;
+    transform:scale(1.2);
+}
+
+/* SEARCH BOX */
+#searchBox{
+    display:none;
+    position:absolute;
+    top:90px;
+    right:20px;
+}
+
+/* ---------- CATEGORY SECTION ---------- */
+.container{
+    margin-top:60px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.row{
+    display:flex;
+    gap:30px;
+    margin:20px;
+}
+
+/* CATEGORY BOX (IMAGE FIX ADDED) */
+.box{
+    width:220px;
+    height:260px;
+    background:white;
+    border-radius:12px;
+    box-shadow:0 4px 8px rgba(0,0,0,0.2);
+    cursor:pointer;
+    overflow:hidden;
+    transition:0.3s;
+}
+
+.box:hover{
+    transform:scale(1.08);
+}
+
+/* IMAGE FULL COVER */
+.box img{
+    width:100%;
+    height:170px;
+    object-fit:cover;
+    transition:0.3s;
+}
+
+.box:hover img{
+    transform:scale(1.1);
+}
+
+.box-title{
+    text-align:center;
+    margin-top:10px;
+    font-size:20px;
+    font-weight:bold;
+    font-family:cursive;
+}
+
+/* ---------- FOOTER ---------- */
+footer{
+    margin-top:70px;
+    background:#2f3e46;
+    color:#f4c2c2;
+    text-align:center;
+    padding:20px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <!-- LOGO -->
+    <img src="C:\Users\Selva Surekha\Downloads\ChatGPT Image Dec 26, 2025, 08_12_41 PM.png" class="logo" onclick="zoomLogo()">
+
+    <!-- SHOP NAME -->
+    <div class="shop-name">Surekha’s Ivory Leaves</div>
+
+    <!-- ICONS -->
+    <div class="icons">
+        <span class="icon" onclick="toggleSearch()">🔍</span>
+        <span class="icon">❓</span>
+        <span class="icon" onclick="showContact()">📞</span>
+    </div>
+</header>
+
+<!-- SEARCH -->
+<div id="searchBox">
+    <input list="books" placeholder="Search category">
+    <datalist id="books">
+        <option value="Novels">
+        <option value="Short Stories">
+        <option value="Kids">
+        <option value="Poetry">
+        <option value="Detective">
+    </datalist>
+</div>
+
+<!-- CATEGORY BOXES -->
+<div class="container">
+
+    <div class="row">
+        <div class="box" onclick="go('novels.html')">
+            <img src="C:\Users\Selva Surekha\Downloads\novel cover page .jpeg">
+            <div class="box-title">📖 Novels</div>
+        </div>
+
+        <div class="box" onclick="go('short-stories.html')">
+            <img src="C:\Users\Selva Surekha\Downloads\short stories cover page.jpg">
+            <div class="box-title">✍ Short Stories</div>
+        </div>
+
+        <div class="box" onclick="go('kids.html')">
+            <img src="C:\Users\Selva Surekha\Downloads\kids cover page.jpg">
+            <div class="box-title">🧸 Kids</div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="box" onclick="go('poetry.html')">
+            <img src="C:\Users\Selva Surekha\Downloads\poetry cover pge.jpg">
+            <div class="box-title">🪶 Poetry</div>
+        </div>
+
+        <div class="box" onclick="go('detective.html')">
+            <img src="C:\Users\Selva Surekha\Downloads\detective cover page.jpg">
+            <div class="box-title">🕵 Detective</div>
+        </div>
+    </div>
+
+</div>
+
+<footer>
+© 2025 Surekha<br>
+Contact: selvasurekha17@gmail.com | 9345143768<br>
+Branches: India · Japan · Germany
+</footer>
+
+<script>
+function toggleSearch(){
+    let s = document.getElementById("searchBox");
+    s.style.display = (s.style.display === "block") ? "none" : "block";
+}
+
+function showContact(){
+    alert("Phone: 9345143768\nEmail: selvasurekha17@gmail.com");
+}
+
+function go(page){
+    location.href = page;
+}
+
+function zoomLogo(){
+    window.open("images/logo.png", "_blank");
+}
+</script>
+
+</body>
+</html>

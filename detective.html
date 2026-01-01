@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Detective</title>
+<style>
+body{font-family:Georgia;background:#fafafa;}
+h1{text-align:center;}
+.books{display:flex;flex-wrap:wrap;justify-content:center;gap:20px;}
+.book{width:200px;background:white;padding:10px;text-align:center;border-radius:10px;box-shadow:0 4px 8px rgba(0,0,0,0.2);cursor:pointer;}
+.book img{width:100%;height:150px;object-fit:cover;}
+.book-title{font-weight:bold;font-family:cursive;}
+</style>
+</head>
+
+<body>
+
+<h1>🕵 Detective</h1>
+
+<div class="books">
+    <div class="book" onclick="order('The First Case','₹420')">
+        <img src="C:\Users\Selva Surekha\Pictures\Screenshots\the first case.png">
+        <div class="book-title">🔎 The First Case</div>
+    </div>
+
+    <div class="book" onclick="order('Lock and Mori','₹480')">
+        <img src="C:\Users\Selva Surekha\Pictures\Screenshots\lock and mori.png">
+        <div class="book-title">🗝 Lock and Mori</div>
+    </div>
+
+    <div class="book" onclick="order('Following','₹360')">
+        <img src="C:\Users\Selva Surekha\Pictures\Screenshots\Following.png">
+        <div class="book-title">👣 Following</div>
+    </div>
+
+    <div class="book" onclick="order('Fake ID','₹390')">
+        <img src="C:\Users\Selva Surekha\Pictures\Screenshots\fake id.png">
+        <div class="book-title">🆔 Fake ID</div>
+    </div>
+
+    <div class="book" onclick="order('The Cousins','₹410')">
+        <img src="C:\Users\Selva Surekha\Pictures\Screenshots\the Cousins.png">
+        <div class="book-title">👥 The Cousins</div>
+    </div>
+</div>
+
+<script>
+function order(name,price){
+    alert("Book: "+name+"\nPrice: "+price+"\n\nPlace Order");
+}
+</script>
+
+</body>
+</html>

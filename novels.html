@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Novels</title>
+<style>
+body{
+    font-family:Georgia;
+    background:#fafafa;
+}
+
+h1{
+    text-align:center;
+}
+
+.books{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:20px;
+}
+
+.book{
+    width:200px;
+    background:white;
+    padding:10px;
+    text-align:center;
+    border-radius:10px;
+    box-shadow:0 4px 8px rgba(0,0,0,0.2);
+    cursor:pointer;
+}
+
+.book img{
+    width:100%;
+    height:150px;
+    object-fit:cover;
+}
+
+.book-title{
+    font-weight:bold;
+    font-family:cursive;
+}
+</style>
+</head>
+
+<body>
+
+<h1>📖 Novels</h1>
+
+<div class="books">
+    <div class="book" onclick="order('Thomas Hardy','₹450')">
+        <img src="C:\Users\Selva Surekha\Pictures\Screenshots\Hardy thomas.png">        <div class="book-title">📚 Thomas Hardy</div>
+    </div>
+
+    <div class="book" onclick="order('The Calculating Stars','₹550')">
+        <img src= "C:\Users\Selva Surekha\Pictures\Screenshots\the calculating stars.png">      <div class="book-title">🌌 The Calculating Stars</div>
+    </div>
+
+    <div class="book" onclick="order('The Temperature of Me and You','₹399')">
+        <img src="C:\Users\Selva Surekha\Downloads\temperature of me and you.jpg">
+        <div class="book-title">❤️ Temperature of Me & You</div>
+    </div>
+
+    <div class="book" onclick="order('Lord of the Rings','₹899')">
+        <img src="C:\Users\Selva Surekha\Downloads\lord of rings.jpg">
+        <div class="book-title">🧙 Lord of the Rings</div>
+    </div>
+
+    <div class="book" onclick="order('Gone With the Wind','₹699')">
+        <img src="C:\Users\Selva Surekha\Downloads\gone with wind.jpg">
+        <div class="book-title">🌪 Gone With the Wind</div>
+    </div>
+</div>
+
+<script>
+function order(name,price){
+    alert("Book: "+name+"\nPrice: "+price+"\n\nPlace Order");
+}
+</script>
+
+</body>
+</html>

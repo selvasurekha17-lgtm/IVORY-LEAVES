@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Kids Books</title>
+<style>
+body{font-family:Georgia;background:#fafafa;}
+h1{text-align:center;}
+.books{display:flex;flex-wrap:wrap;justify-content:center;gap:20px;}
+.book{width:200px;background:white;padding:10px;text-align:center;border-radius:10px;box-shadow:0 4px 8px rgba(0,0,0,0.2);cursor:pointer;}
+.book img{width:100%;height:150px;object-fit:cover;}
+.book-title{font-weight:bold;font-family:cursive;}
+</style>
+</head>
+
+<body>
+
+<h1>🧸 Kids</h1>
+
+<div class="books">
+    <div class="book" onclick="order('The Little Dreamer','₹250')">
+        <img src="C:\Users\Selva Surekha\Pictures\Screenshots\the little dreamers .png">
+        <div class="book-title">🌈 The Little Dreamer</div>
+    </div>
+
+    <div class="book" onclick="order('Be You','₹220')">
+        <img src="C:\Users\Selva Surekha\Pictures\Screenshots\Be You.png">
+        <div class="book-title">😊 Be You</div>
+    </div>
+
+    <div class="book" onclick="order('Prairie Lotus','₹300')">
+        <img src="C:\Users\Selva Surekha\Pictures\Screenshots\praire Lotus.png">
+        <div class="book-title">🌸 Prairie Lotus</div>
+    </div>
+
+    <div class="book" onclick="order('Investigators','₹280')">
+        <img src="C:\Users\Selva Surekha\Pictures\Screenshots\Investigators.png">
+        <div class="book-title">🔍 Investigators</div>
+    </div>
+
+    <div class="book" onclick="order('Billionaire Boy','₹260')">
+        <img src="C:\Users\Selva Surekha\Pictures\Screenshots\The billionare boy.png">
+        <div class="book-title">💰 Billionaire Boy</div>
+    </div>
+</div>
+
+<script>
+function order(name,price){
+    alert("Book: "+name+"\nPrice: "+price+"\n\nPlace Order");
+}
+</script>
+
+</body>
+</html>

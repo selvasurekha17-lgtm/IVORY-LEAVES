@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Poetry</title>
+<style>
+body{font-family:Georgia;background:#fafafa;}
+h1{text-align:center;}
+.books{display:flex;flex-wrap:wrap;justify-content:center;gap:20px;}
+.book{width:200px;background:white;padding:10px;text-align:center;border-radius:10px;box-shadow:0 4px 8px rgba(0,0,0,0.2);cursor:pointer;}
+.book img{width:100%;height:150px;object-fit:cover;}
+.book-title{font-weight:bold;font-family:cursive;}
+</style>
+</head>
+
+<body>
+
+<h1>🪶 Poetry</h1>
+
+<div class="books">
+    <div class="book" onclick="order('Mary Oliver','₹400')">
+        <img src="C:\Users\Selva Surekha\Pictures\Screenshots\mary oliver.png">
+        <div class="book-title">🌿 Mary Oliver</div>
+    </div>
+
+    <div class="book" onclick="order('The Hill We Climb','₹450')">
+        <img src="C:\Users\Selva Surekha\Pictures\Screenshots\the hill we climb.png">
+        <div class="book-title">⛰ The Hill We Climb</div>
+    </div>
+
+    <div class="book" onclick="order('Remind Me Again','₹320')">
+        <img src="C:\Users\Selva Surekha\Pictures\Screenshots\remaind me again.png">
+        <div class="book-title">💭 Remind Me Again</div>
+    </div>
+
+    <div class="book" onclick="order('Sylvia Plath','₹500')">
+        <img src="C:\Users\Selva Surekha\Pictures\Screenshots\sylvia path.png">
+        <div class="book-title">🖋 Sylvia Plath</div>
+    </div>
+
+    <div class="book" onclick="order('Cross Roads','₹350')">
+        <img src="C:\Users\Selva Surekha\Pictures\Screenshots\cross roads.png">
+        <div class="book-title">🛤 Cross Roads</div>
+    </div>
+</div>
+
+<script>
+function order(name,price){
+    alert("Book: "+name+"\nPrice: "+price+"\n\nPlace Order");
+}
+</script>
+
+</body>
+</html>
